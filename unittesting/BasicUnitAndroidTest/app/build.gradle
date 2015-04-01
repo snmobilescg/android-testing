@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
 
 android {
     compileSdkVersion 22
@@ -14,6 +15,11 @@ android {
     }
     packagingOptions {
         exclude 'LICENSE.txt'
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
     }
 }
 
