@@ -67,4 +67,14 @@ public class LogHistoryAndroidUnitTest {
         assertThat(createdFromParcelData.get(0).first, is(TEST_STRING));
         assertThat(createdFromParcelData.get(0).second, is(TEST_LONG));
     }
+
+    @Test
+    public void trueTest() {
+        assertThat((1 == 1), is(true));
+    }
+
+    @Test
+    public void falseTest() {
+        assertThat((0 == 1), is(true));
+    }
 }
