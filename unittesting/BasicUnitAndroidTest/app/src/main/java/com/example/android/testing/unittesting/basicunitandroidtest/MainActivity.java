@@ -103,4 +103,8 @@ public class MainActivity extends Activity {
 
         mIsHistoryEmpty = false;
     }
+
+    public static String returnHello() {
+        return "hello";
+    }
 }
